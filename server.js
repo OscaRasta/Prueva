@@ -1,7 +1,7 @@
 
 //
 var app = require('express')();
-var server = require('http').createServer(app);
+var server = require('https').createServer(app);
 var io = require('socket.io').listen(server);
 server.listen(process.env.PORT || 8082);
 
